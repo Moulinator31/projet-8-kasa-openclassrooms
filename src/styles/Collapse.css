@@ -1,0 +1,55 @@
+.content{
+    background-color: #F6F6F6;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    color: #FF6060;
+    cursor: pointer;
+    padding: 18px;
+    font-size: 15px  
+}
+
+.CaseList {
+    background: #FF6060;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-radius:5px;
+}
+.CaseList summary{
+    list-style: none;
+    list-style-type: none;
+}
+.CaseList summary::-moz-marker,
+.CaseList summary::marker,
+.CaseList summary::-webkit-details-marker{
+    display: none;
+    content:'';
+}
+.CasePosition[open] summary img {
+    transform: rotate(180deg);
+}
+.CasePosition{
+    width: 75%;
+}
+
+.contentExemple {
+    padding: 0.5rem;
+    border-radius: 0px 5px 5px;
+}
+    
+.content-parent {
+    height: 0px;
+    overflow: hidden;
+    transition: height ease 0.9s;
+}
+    
+.content-show {
+    height: 100%;
+}

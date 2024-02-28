@@ -1,0 +1,19 @@
+.footer{
+    Width: 100%;
+    Height: 209px;
+    background-color: #000;
+    text-align: center;
+    padding-top: 70px;
+    margin-top: 50px;
+}
+
+.picture{
+    padding-bottom: 20px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 500;
+}
