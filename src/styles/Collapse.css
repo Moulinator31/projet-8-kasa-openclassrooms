@@ -78,7 +78,7 @@ div.content {
     border: 2px solid transparent;
     transition: max-height 900ms ease-out, border 0ms 900ms linear;
 }
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 1400px) {
     details[open] + div.content{
         padding-top: 10px;
         padding-bottom: 10px;

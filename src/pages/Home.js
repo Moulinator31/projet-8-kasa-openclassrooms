@@ -10,9 +10,9 @@ function Home() {
             <Banner img={banner} text={"Chez vous, partout et ailleurs"} />
 
         <section className="cardsPosition">
-                {logements.map((logement) => {
+                {logements.map((logement, key) => {
                     return (
-                        <Link className="paddingCard" to={`/Accommodation/${logement.id}`}>
+                        <Link className="paddingCard" to={`/Accommodation/${logement.id}`} key={key}>
                             <Card key={logement.id} cover={logement.cover} title={logement.title} />
                         </Link>
                     )

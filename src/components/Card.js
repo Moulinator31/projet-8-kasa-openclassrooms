@@ -5,7 +5,7 @@ function Card({ cover, title }) {
     <figure className="card">
       <img src={cover} alt={title} className="pictures" />
       <div className="card-shadow" />
-      <figcaption class="card-title">
+      <figcaption className="card-title">
         <h2 className="tittle_card">{title}</h2>
       </figcaption>
     </figure>
