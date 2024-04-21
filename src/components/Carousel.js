@@ -22,7 +22,8 @@ const ImageSlider = ({ slides }) => {
               <img 
                 src={ arrowBack } 
                 onClick={ prevSlide } 
-                className='left-arrow'>
+                className='left-arrow'
+                alt="arrow left">
 
               </img>
            )}
@@ -31,7 +32,8 @@ const ImageSlider = ({ slides }) => {
               <img 
                   src={ arrowNext } 
                   onClick={ nextSlide } 
-                  className='right-arrow '>
+                  className='right-arrow '
+                  alt="arrow right">
 
               </img>
            )}
