@@ -22,6 +22,8 @@
 @media screen and (max-width: 870px) {
     .hostName {
         font-size: 12px;
+        width: 30%;
+
     }
 }
 
