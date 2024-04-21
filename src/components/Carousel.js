@@ -45,7 +45,7 @@ const ImageSlider = ({ slides }) => {
                   key={index}
                 >
                   {index === current && (
-                    <img src={image} alt='travel image' className='image' />
+                    <img src={image} alt='travel' className='image' />
                   )}
                   {index === current && length > 1 && (
                     <span className="number">
