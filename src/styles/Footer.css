@@ -1,6 +1,6 @@
 .footer{
     Width: 100%;
-    Height: 209px;
+    height: 180px;;
     background-color: #000;
     text-align: center;
     padding-top: 70px;
@@ -10,10 +10,21 @@
 .picture{
     padding-bottom: 20px;
 }
+@media screen and (max-width: 870px) {
+    .footer {
+        margin-top: 20px;
+    }
+}
 
-h2 {
+
+h5 {
     color: #fff;
     font-size: 24px;
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+}
+@media screen and (max-width: 870px) {
+    h5 {
+        font-size: 12px;
+    }
 }

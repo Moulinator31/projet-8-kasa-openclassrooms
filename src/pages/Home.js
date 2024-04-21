@@ -3,28 +3,23 @@ import "../styles/Home.css";
 import { Link } from "react-router-dom";
 import Card from "../components/Card";
 import Banner from "../components/Banner";
-import banner from "../assets/banner.png"
+import banner from "../assets/Pictures/banner.png"
 
 function Home() {
-    return  <div>
-        <div className="picturesBanner">
+    return <main>
             <Banner img={banner} text={"Chez vous, partout et ailleurs"} />
-        </div>
 
-        <div className="backCardsHome">
-            
-            <section className="cardsPosition">
+        <section className="cardsPosition">
                 {logements.map((logement) => {
                     return (
-                        <Link className="paddingCard" to={`/logement/${logement.id}`}>
+                        <Link className="paddingCard" to={`/Accommodation/${logement.id}`}>
                             <Card key={logement.id} cover={logement.cover} title={logement.title} />
                         </Link>
                     )
                 })}
-            </section>
-        </div>
-        </div>
-    ;
+        </section>
+    </main>
+        ;
 
 }
 export default Home;

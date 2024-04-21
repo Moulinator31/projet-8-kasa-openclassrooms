@@ -1,0 +1,132 @@
+.bodyAccomodation{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 870px) {
+    .bodyAccomodation {
+        margin-left: 7.8%;
+        margin-right: 7.8%;
+    }
+}
+
+.nameLogement {
+    font-size: 36px;
+    color: #FF6060;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+@media screen and (max-width: 870px) {
+    .nameLogement {
+        font-size: 18px;
+    }
+}
+
+.positionName{
+    margin-left: 0px;
+}
+@media screen and (max-width: 870px) {
+    .positionName {
+        margin-bottom: 0px;
+    }
+}
+
+
+
+.nameCity {
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 870px) {
+    .nameCity {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+}
+
+.positionTags {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.tags {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    border-radius: 14px;
+    color: #fff;
+    background-color: #FF6060;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+@media screen and (max-width: 870px) {
+    .tags {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+}
+
+.positionDescription {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+@media screen and (max-width: 870px) {
+    .positionDescription {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+@media screen and (max-width: 870px) {
+    .etoile {
+        width:30px
+    }
+}
+
+
+.color {
+    background-color: black;
+}
+
+.marginDescrip {
+    margin-right: 30px;
+}
+
+.positionNameRatingHostTag{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 870px) {
+    .positionNameRatingHostTag {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+}
+.PositionPictureRating{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 870px) {
+    .PositionPictureRating {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+

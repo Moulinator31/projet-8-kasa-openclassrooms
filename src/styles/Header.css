@@ -1,8 +1,8 @@
 .lmj-banner {
     color: #FF6060;
     text-align: right;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 7.8%;;
+    margin-right: 7.8%;;
 }
 
 .position-header{
@@ -17,7 +17,12 @@
     display: flex;
     flex-direction: row;
 }
-
+@media screen and (max-width: 870px) {
+    .header_logo {
+        height: 46px;
+        width: 145px;
+    }
+}
 .lmjg-banner-welcome-about{
     font-family: roboto;
     font-size: 14px;
@@ -31,9 +36,22 @@
     gap: 50px;
     padding-top: 10px;
 }
+@media screen and (max-width: 870px) {
+    .nav {
+        gap: 20px;
+    }
+}
 .nav_link{
     text-decoration: none;
-    color: #FF6060;
-    font-size: 24px;
-    
+    color: black;
+    font-size: 24px;  
+    padding-top: 10px;
+}
+.nav_link:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 870px) {
+    .nav_link {
+        font-size: 15px;
+    }
 }

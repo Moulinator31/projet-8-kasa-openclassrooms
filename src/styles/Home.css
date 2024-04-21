@@ -1,23 +1,13 @@
-
-.backCardsHome{
-    background: #F6F6F6;
-    border-radius: 15px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-h1{
-    font-size: 48px;
-    color: #fff;
-    font-family: 'Montserrat' sans-serif;
-    font-weight: 500;
-    bottom: 50%;
-    position: absolute;
-    top: 20%;
-    left: 25%;
-}
-
 .paddingCard{
-    padding-left: 30px;
     padding-top: 50px;
-    padding-right: 30px;
+}
+
+@media screen and (max-width: 870px){
+    .paddingCard{
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 20px;
+    }
+    
 }

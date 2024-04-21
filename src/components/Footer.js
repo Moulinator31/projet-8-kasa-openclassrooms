@@ -1,13 +1,17 @@
-import footer from "../assets/LogoFooter.png";
+import { Link } from "react-router-dom";
+import footer from "../assets/Pictures/LogoFooter.png";
 import "../styles/Footer.css";
 
 
-function Footer (){
-    return <footer className="footer">
 
+function Footer (){
+        const currentYear = new Date().getFullYear();
+    return <footer className="footer">
+                <Link to="/">
                 <img src={footer} alt="Kasa"className="picture" />
-                <h2>© 2020 Kasa. All rights reserved</h2>
-            
+                </Link>
+
+                <h5>© {currentYear} Kasa. All rights reserved</h5>
         </footer>
     
 }

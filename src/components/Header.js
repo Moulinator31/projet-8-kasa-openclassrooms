@@ -1,8 +1,7 @@
 import '../styles/Header.css'
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
-import logo from '../assets/logo.png'
-import Banner from "../components/Banner";
+import logo from '../assets/Pictures/logo.png'
 
 
 
@@ -33,9 +32,6 @@ function Header() {
         A Propos
       </NavLink>
     </nav>
-    </div>
-    <div>
-      <Banner />
     </div>
   </header>
 ;

@@ -1,0 +1,42 @@
+.positionBody{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.error{
+    color :#FF6060;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-family: Montserrat;
+    line-height: 411px;
+    letter-spacing: 0em;
+    font-size: 288px;
+}
+@media screen and (max-width: 870px) {
+    .error {
+        font-size:100px;
+        margin-bottom: 0px;
+        line-height: 350px;
+    }
+}
+
+.messageError{
+    color :#FF6060;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 100px;
+}
+@media screen and (max-width: 870px) {
+    .messageError {
+        margin-top: 0px;
+        font-size: 18px;
+        margin-left: 7.8%;
+        margin-right: 7.8%;
+    }
+}
+
+.return{
+    color: black;
+    margin-bottom: 50px;
+}

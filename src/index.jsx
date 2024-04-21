@@ -7,7 +7,9 @@ import Home from './pages/Home';
 import Header from './components/Header';
 import About from './pages/About';
 import Footer from './components/Footer';
-import Appartement from './pages/Appartement';
+import Accommodation from './pages/Accommodation';
+import Error from './pages/Error';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,10 +21,11 @@ root.render(
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
-        <Route path="/logement/:id" element={<Appartement />} />
+        <Route path="/Accommodation/:id" element={<Accommodation />} />
+        <Route path="*" element={<Error />} />
     </Routes>
+    <Footer />
   </Router>
-  <Footer />
   </React.StrictMode>
 );
 reportWebVitals();

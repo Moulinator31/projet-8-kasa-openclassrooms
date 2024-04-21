@@ -4,7 +4,15 @@
     justify-items: center;
     display: grid;
     gap: 30px;
-    margin-top: 30px;
+    margin: 40px auto;
+    max-width: 65%;
+}
+@media screen and (max-width: 870px) {
+    .PositionList {
+        gap: 19px;
+        margin: 40px 7.8% 3px 7.8%;
+        max-width: 100%;
+    }
 }
 
 

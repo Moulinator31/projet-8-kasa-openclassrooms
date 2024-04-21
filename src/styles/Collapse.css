@@ -1,21 +1,7 @@
-.content{
-    background-color: #F6F6F6;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-radius: 5px;
-    color: #FF6060;
-    cursor: pointer;
-    padding: 18px;
-    font-size: 15px  
-}
-
 .CaseList {
     background: #FF6060;
     color: #fff;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 24px;
     display: flex;
     justify-content: space-between;
@@ -26,30 +12,119 @@
     list-style: none;
     list-style-type: none;
 }
-.CaseList summary::-moz-marker,
-.CaseList summary::marker,
-.CaseList summary::-webkit-details-marker{
-    display: none;
-    content:'';
+@media screen and (max-width: 870px) {
+    .CaseList {
+        font-size: 13px;
 }
-.CasePosition[open] summary img {
-    transform: rotate(180deg);
-}
-.CasePosition{
-    width: 75%;
 }
 
-.contentExemple {
-    padding: 0.5rem;
-    border-radius: 0px 5px 5px;
+.CasePosition[open] summary img {
+    rotate: 180deg;
+    transition: rotate 200ms ease-out;
 }
-    
-.content-parent {
-    height: 0px;
+
+.CasePosition summary img {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    transition: rotate 100ms 300ms ease-out;
+}
+details[open] + summary .content {
+    max-height: 1400px; /* Set a max-height value enough to show all the content */        
+    border-color: #888;
+    transition: max-height 400ms ease-out, border 0ms linear;
+}
+
+.CasePosition{
+    width: 100%;
+}
+@media screen and (max-width: 870px) {
+    .CasePosition {
+        width: 100%;
+}
+}
+
+.contentEquipments{
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.CaseList summary::-moz-marker,
+.CaseList summary::marker,
+.CaseList summary::-webkit-details-marker {
+    display: none; /* This also hides the ::marker pseudo-element, but in Safari */
+}
+details {
+    max-width: 1400px;
     overflow: hidden;
-    transition: height ease 0.9s;
 }
-    
-.content-show {
-    height: 100%;
+summary {
+    display: block; /* This hides the summary's ::marker pseudo-element */
+}
+
+summary::-webkit-details-marker {
+    display: none; /* This also hides the ::marker pseudo-element, but in Safari */
+}
+div.content { 
+    background-color: #F6F6F6;
+    box-sizing: border-box;
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: max-height 900ms ease-out, border 0ms 900ms linear;
+}
+@media screen and (max-width: 870px) {
+    details[open] + div.content{
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+}
+
+details[open] + div.content {
+    max-height: 800px; /* Set a max-height value enough to show all the content */        
+    transition: max-height 900ms ease-out, border 0ms linear;
+}
+
+details[open] summary img {
+    rotate: 180deg;
+    transition: rotate 200ms ease-out;
+}
+summary img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+@media screen and (max-width: 870px) {
+    summary img {
+        width: 16px;
+}
+}
+
+
+summary img {
+    cursor: pointer;
+}
+
+summary img::before {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+    transition: rotate 200ms 400ms ease-out;
+}
+
+.policeContent {
+    font-size: 18px;
+    font-weight: 400;
+}
+@media screen and (max-width: 870px) {
+    .policeContent {
+        font-size: 13px;
+}
 }

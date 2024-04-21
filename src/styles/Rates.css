@@ -1,0 +1,10 @@
+.rate-contenair{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+@media screen and (max-width: 870px) {
+    .rate-contenair {
+    display: flex;
+    padding-left: 0px;
+    }
+}
