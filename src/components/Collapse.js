@@ -13,8 +13,8 @@ function Collapse({ content, title }) {
             <img src={arrow} alt="arrow"></img>
           </summary>
         </details>
-          <div className="content policeContent">
-          {content}
+          <div className="content policeContente">
+         {content}
           </div>
       </div>
     );
